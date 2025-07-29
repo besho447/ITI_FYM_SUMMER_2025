@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Blog</title>
+    {% load static %}
+</head>
+<body>
+    <h1>Welcome to School Blog</h1>
+    {% for blog in blogs %}
+    <h2>{{ blog.title}}</h2>
+    <p>{{ blog.content}}</p>
+    <small>Blog Posted on: {{ blog.created_date}}</small>
+    {% endfor %}
+</body>
+</html>
+
